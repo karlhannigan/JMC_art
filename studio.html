@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet"/>
+
+    <title> JMC Art/murals </title>
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css" />
+    <link rel="stylesheet" href="assets/css/templatemo-style.css" />
+    <link rel="stylesheet" href="static/base.css"/>
+  
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"> </script>
+
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <div class="d-flex w-50 order-0">
+        <a class="navbar-brand mr-1" href="index.html" style="font-family:monospace; padding-left:5%">JMC Art</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </div>
+    <div class="navbar-collapse collapse justify-content-center order-2" id="collapsingNavbar">
+        <ul class="navbar-nav" style="font-family:monospace">
+            <li class="nav-item active">
+                <a class="nav-link" href="murals.html"> <span class="sr-only">Murals</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="studio.html">Studio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+            </li>
+        </ul>
+    </div>
+    <span class="navbar-text small text-truncate mt-1 w-50 text-right order-1 order-md-last"></span>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+</nav>
+
+
+
+<div class="container">
+    <div class="row">
+       <div class="col-md-6">
+       <a href="#" class="pop">
+        <figure>
+            <img src="images/image0.jpeg" class="art">
+            <figcaption style="font-family:monospace">
+            <h1 style="color:white">Kobe</h1>
+            </figcation>  
+        </figure>
+        </a>
+        
+        <a href="#" class="pop">
+        <figure>
+            <img src="images/image1.jpeg" alt="Lights" class="art">
+            <figcaption style="font-family:monospace">
+            <h1 style="color:white">Cnoc Bride</h1>
+            </figcaption>
+        </figure>
+        </a>
+        </div>
+        
+        <div class="col-md-6">
+        
+        <a href="#" class="pop">
+        <figure>
+            <img src="images/image5.jpeg"alt="Lights" class="art">
+            <figcaption style="font-family:monospace">
+            <h1 style="color:white">Tadgh Furlong</h1>
+            </figcaption>
+        </figure>
+        </a>
+            
+            <a href="#" class="pop">
+            <img src="images/image0.jpeg" alt="Lights" class="art">
+            </a>
+        </div>
+        
+        
+        <div class="col-md-6">
+            <a href="#" class="pop">
+            <img src="images/image2.jpeg"alt="Lights" class="art">
+            </a>
+        
+            <a href="#" class="pop">
+            <img src="images/image4.jpeg" alt="Lights" class="art">
+            </a>
+        </div>
+        
+        <div class="col-md-6">
+            <img src="images/image3.jpeg"alt="Lights" class="art">
+            <img src="images/image1.jpeg" alt="Lights" class="art">
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">              
+      <div class="modal-body">
+        <img src="" class="imagepreview" style="width:150%; height:150%; margin-left: -135px;" >
+      </div>
+    </div>
+  </div>
+</div>
+
+    <script>
+    $(function() {
+            $('.pop').on('click', function() {
+                $('.imagepreview').attr('src', $(this).find('img').attr('src'));
+                $('#imagemodal').modal('show');   
+            });		
+    });
+
+    </script>
+
+    <script src="https://unpkg.com/@popperjs/core@2.4.0/dist/umd/popper.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+
+</body>
