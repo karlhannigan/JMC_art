@@ -1,0 +1,268 @@
+.img-fluid {
+    position: relative;
+    height: 100vh;
+}
+
+.text {
+    text-align: center;
+    margin-top: 30%;
+}
+
+body {
+    font-family: monospace;
+}
+
+/*navbar style */
+
+#navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    height: 9vh;
+}
+
+ul#navbar li{
+    display: inline;
+}
+
+a:hover {
+    color: rgb(173, 166, 166) !important;
+    text-decoration: underline;
+  }
+
+a:link {
+    color: orange;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:visited {
+ color: black;
+  }
+  
+.abs-center-x {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/*images on murals and studio page*/
+.art
+{
+  width: 100%;
+  margin: 10px 0px;
+  box-shadow: 0px 0px 17px 0px rgba(0,0,0,0.41);
+}
+/*hover style on images*/
+/*
+.art:hover{
+    transition: all .10s ease;
+    -webkit-transition: all 1s ease;
+}
+*/
+
+
+
+.image1 {
+    background-color: black;
+}
+
+.modal {
+    text-align: center;
+    margin-right: 20px;
+}
+
+.modal-dialog {
+    background-color: transparent !important;
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.modal:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+  }
+
+
+/*on click transforming image size*/
+.imagepreview{
+    transform: scale(1.2); /* (150% zoom)*/
+    justify-content: center;
+}
+
+
+
+.paddingTB60 {padding:60px 0px 60px 0px;}
+.gray-bg {background: #F1F1F1 !important;}
+.about-title {}
+.about-title h1 {color: #535353; font-size:45px;font-weight:600;}
+.about-title span {color: #535353; font-size:45px;font-weight:700;}
+.about-title h3 {color: #535353; font-size:23px;margin-bottom:24px;}
+.about-title p {color: #7a7a7a;line-height: 1.8;margin: 0 0 15px;}
+.about-paddingB {padding-bottom: 12px;}
+.about-img {padding-left: 57px;}
+
+/* Social Icons */
+.about-icons {margin:48px 0px 48px 0px ;}
+.about-icons i{margin-right: 10px;padding: 0px; font-size:35px;color:#323232;box-shadow: 0 0 3px rgba(0, 0, 0, .2);}
+.about-icons li {margin:0px;padding:0;display:inline-block;}
+#social-fb:hover {color: #3B5998;transition:all .001s;}
+ #social-tw:hover {color: #4099FF;transition:all .001s;}
+ #social-gp:hover {color: #d34836;transition:all .001s;}
+ #social-em:hover {color: #f39c12;transition:all .001s;}
+
+
+figure {	
+	display: inline-block;
+	position: relative;
+	overflow: hidden;	
+	text-align: center;		
+	cursor: pointer;
+}
+
+figure figcaption {
+	position: absolute;
+	top: 50%;
+	left: 15%;
+	right: 15%;	
+	width: 200px;
+	opacity: 0;
+	z-index: 1;
+	transition: all 0.8s ease-out;
+    transition-delay: 0.2s;
+    color: white;
+}
+figure:after {
+	display: inline-block;
+	position: absolute;
+	content: "";
+	top: 7%;
+	left: 7%;
+	right: 7%;
+	bottom: 7%;
+	background: white;
+	opacity: 0;
+	transition: all 0.8s ease-out;
+}
+figure:hover:after {
+	opacity: 0.3;
+}
+figure:hover figcaption {
+	transform: translateY(-50%);
+    opacity: 1;
+    color: white;
+}
+
+
+ .homeimage {
+     padding: 0;
+ }
+
+ /* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  /* Add a background color and some padding around the form */
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+  
+  /* Style inputs */
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  /* Style the container/contact section */
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 10px;
+  }
+  
+  /* Create two columns that float next to eachother */
+  .column {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+
+.contact-header {
+    font-size: 1.4em;
+    font-weight: bold;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+.contact-form {
+    overflow: hidden;
+    height: 91%;
+    width: 70%;
+    margin-left: 15%;
+    padding-bottom: 2.5%;
+    
+}
